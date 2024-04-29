@@ -35,6 +35,8 @@ export default function SearchSection() {
     // 검색 입력 값 변경 시 호출되는 함수
     const handleInputChange = (event) => {
         setSearchParams(event.target.value);
+        console.log('검색어:', event.target.value);
+        console.log('선택된 옵션:', selected.name);
     };
 
 
