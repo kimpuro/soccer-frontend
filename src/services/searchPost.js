@@ -15,3 +15,12 @@ export const searchPost = async (column,param) => {
         return error;
     }
 }
+
+export const columnsGet = async () => {
+    try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/columns`);
+        return res.json();
+    } catch (error) {
+        return error;
+    }
+}

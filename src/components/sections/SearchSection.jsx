@@ -1,15 +1,39 @@
+'use client';
+import { Fragment, useState } from 'react'
+import { Listbox, Transition } from '@headlessui/react'
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import SearchSelect from "@/components/forms/SearchSelect";
+
+const people = [
+    { id: 1, name: 'Wade Cooper' },
+    { id: 2, name: 'Arlene Mccoy' },
+    { id: 3, name: 'Devon Webb' },
+    { id: 4, name: 'Tom Cook' },
+    { id: 5, name: 'Tanya Fox' },
+    { id: 6, name: 'Hellen Schmidt' },
+    { id: 7, name: 'Caroline Schultz' },
+    { id: 8, name: 'Mason Heaney' },
+    { id: 9, name: 'Claudie Smitham' },
+    { id: 10, name: 'Emil Schaefer' },
+]
+
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+}
 
 export default function SearchSection() {
+    const [selected, setSelected] = useState(people[0])
     return (
         <div className="fixed isolate overflow-hidden bg-gray-900 h-dvh w-dvw flex items-center justify-center">
-            <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8 w-full">
+            <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8 w-full max-w-lg">
                 <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
                     Search anything!
                 </h2>
                 <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
                     아무거나 검색 해보세요!
                 </p>
-                <form className="mx-auto mt-10 flex max-w-md gap-x-4">
+                <form className="mx-auto mt-10 flex max-w-md gap-x-4 ">
+
                     <label htmlFor="search" className="sr-only">
                         검색창
                     </label>
@@ -28,6 +52,8 @@ export default function SearchSection() {
                         검색하기
                     </button>
                 </form>
+                <SearchSelect />
+
                 <svg
                     viewBox="0 0 1024 1024"
                     className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
