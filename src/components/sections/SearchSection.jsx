@@ -2,19 +2,18 @@
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
-import SearchSelect from "@/components/forms/SearchSelect";
 
 const searchOptions = [
-    { id: 1, name: 'Wade Cooper' },
-    { id: 2, name: 'Arlene Mccoy' },
-    { id: 3, name: 'Devon Webb' },
-    { id: 4, name: 'Tom Cook' },
-    { id: 5, name: 'Tanya Fox' },
-    { id: 6, name: 'Hellen Schmidt' },
-    { id: 7, name: 'Caroline Schultz' },
-    { id: 8, name: 'Mason Heaney' },
-    { id: 9, name: 'Claudie Smitham' },
-    { id: 10, name: 'Emil Schaefer' },
+    { id: 1, name: '선수' },
+    { id: 2, name: '팀' },
+    { id: 3, name: '구단' },
+    { id: 4, name: '구장' },
+    { id: 5, name: '임시' },
+    { id: 6, name: '임시' },
+    { id: 7, name: '임시' },
+    { id: 8, name: '임시' },
+    { id: 9, name: '임시' },
+    { id: 10, name: '임시' },
 ]
 
 function classNames(...classes) {
