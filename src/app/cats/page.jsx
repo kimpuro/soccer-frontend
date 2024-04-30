@@ -1,5 +1,5 @@
 import ImagesWithDetails from "@/components/lists/RandomCats";
-import NewRandomCats from "@/components/Banners/NewRandomCats";
+import NewRandomCats from "@/components/banners/NewRandomCats";
 
 const RandomCatsPage = () => {
     return (<>
