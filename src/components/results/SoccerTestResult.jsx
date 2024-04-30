@@ -9,6 +9,7 @@ export default async function SoccerTestResult({params}){
             <h1 className="text-white">{params.id}번</h1>
             <pre className="text-white">{JSON.stringify(res, null, 2)}</pre>
             </div>
+            <div className="bg-gray-900 h-dvh"></div>
         </>
 
     )
