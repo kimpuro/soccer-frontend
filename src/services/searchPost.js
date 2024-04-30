@@ -24,3 +24,12 @@ export const columnsGet = async () => {
         return error;
     }
 }
+
+export const soccerTestGet = async (id) => {
+    try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/test/${id}`);
+        return res.json();
+    } catch (error) {
+        return error;
+    }
+}
