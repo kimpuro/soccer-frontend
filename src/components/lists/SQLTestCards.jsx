@@ -32,8 +32,8 @@ function classNames(...classes) {
 
 export default function SQLTestCards() {
     return (
-        <div>
-            <h2 className="text-sm font-medium text-gray-500">Pinned Projects</h2>
+        <div className="bg-gray-900">
+            <h2 className="text-sm font-medium text-gray-500">제목을 클릭해서 테스트 해보세요</h2>
             <ul role="list" className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
                 {projects.map((project) => (
                     <li key={project.name} className="col-span-1 flex rounded-md shadow-sm">
