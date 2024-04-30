@@ -17,6 +17,7 @@ export default function ImagesWithDetails() {
         setFiles(generatedFiles); // 생성된 파일 목록을 상태로 설정합니다.
     }, []); // 의존성 배열이 비어 있으므로 useEffect는 컴포넌트가 처음 렌더링될 때만 실행됩니다.
     return (
+        <div className="bg-gray-900 p-10">
         <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
             {files.map((file) => (
                 <li key={file.title} className="relative">
@@ -26,10 +27,11 @@ export default function ImagesWithDetails() {
                             <span className="sr-only">View details for {file.title}</span>
                         </button>
                     </div>
-                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{file.title}</p>
+                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-white">{file.title}</p>
                     <p className="pointer-events-none block text-sm font-medium text-gray-500">{file.date}</p>
                 </li>
             ))}
         </ul>
+        </div>
     )
 }
