@@ -2,7 +2,6 @@ import {soccerTestGet} from "@/services/searchPost";
 
 export default async function SoccerTestResult({params}){
     const res = await soccerTestGet(params.id);
-    console.log(res);
 
     return (
         <>
