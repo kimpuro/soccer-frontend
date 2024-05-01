@@ -1,4 +1,4 @@
-export const searchPost = async (column,param) => {
+export const searchPost = async (column, param) => {
     try {
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/search`, {
             method: "POST",
@@ -28,6 +28,16 @@ export const columnsGet = async () => {
 export const soccerTestGet = async (id) => {
     try {
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/test/${id}`);
+        return res.json();
+    } catch (error) {
+        return error;
+    }
+}
+
+export const searchTest = async (type, param) => {
+    try {
+        const query = `?type=${type}&param=${param}`;
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/search${query}`);
         return res.json();
     } catch (error) {
         return error;
