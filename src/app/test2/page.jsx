@@ -1,7 +1,11 @@
+import TestLineChart from "@/components/charts/TestLineChart";
+import TestBarChart from "@/components/charts/TestBarChart";
 
-import LinkButton from "@/components/buttons/LinkButton";
-
-export default function Test() {
+export default function () {
     return (
-        <LinkButton/>
-        )}
+        <>
+        <TestLineChart/>
+        <TestBarChart/>
+            </>
+    )
+}
