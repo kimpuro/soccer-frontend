@@ -5,8 +5,8 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Linus team soccer",
-  description: "Linus team's soccer search service",
+  title: "Linus team (soccer)",
+  description: "Linus team's (soccer) search service",
 };
 
 export default function RootLayout({ children }) {
