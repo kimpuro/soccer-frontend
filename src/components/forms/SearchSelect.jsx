@@ -1,7 +1,8 @@
 'use client';
-import { Fragment, useState } from 'react'
-import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import {Fragment, useState} from 'react'
+import {Listbox, Transition} from '@headlessui/react'
+import {CheckIcon, ChevronUpDownIcon} from '@heroicons/react/20/solid'
+// search section에 있는 컴포넌트의 원본입니다.
 
 const people = [
     { id: 1, name: 'Wade Cooper' },
