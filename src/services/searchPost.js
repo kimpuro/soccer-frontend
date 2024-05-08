@@ -34,7 +34,7 @@ export const soccerTestGet = async (id) => {
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/test/${id}`,
             {
                 method: "GET",
-                cache: "no-cache"
+                cache: "no-store"
             });
         return res.json();
     } catch (error) {
