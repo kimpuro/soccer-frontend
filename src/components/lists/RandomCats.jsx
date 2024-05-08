@@ -4,7 +4,6 @@ import {useEffect, useState} from "react";
 
 export default function ImagesWithDetails() {
     const [files, setFiles] = useState([]);
-
     useEffect(() => {
         const generatedFiles = [];
         for (let i = 0; i < 12; i++) {
